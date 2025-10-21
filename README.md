@@ -101,7 +101,35 @@ I ___strongly suggest___ that you carefully think through your strategy before j
 # Modifications and Documentation
 
 ## ChatGPT
-### Prompt 1: 
+### Prompt 1: Provide me example code of how to use Collections.sort() and Collections.shuffle() to store data objects in an array list. I would like to sort them, if possible, by a specific integer attribute of the object. Program it in java.
+
+Response: https://chatgpt.com/s/t_68f7896d9cd88191b2cfb265e80634f6
+Assessment: This was useful to learn how the Collections.sort() and Collections.shuffle() operations work and how they are typically implemented, as I had not previously used them before in any of my projects. I felt more comfortable using these operaitons after this
+
+### Prompt 2: Is there a way to have Collections return a new array without modifying the original array?
+
+Response: https://chatgpt.com/s/t_68f78ad31220819182f1de475447eea3
+Assessment: This was not particularly helpful. I wanted to see if there was an easier way to implement the .sort() and .shuffle() algorithms, here GPT did not give me much of a solution and more gave me a long answer of "no".
+
+### Prompt 3: I would like to use System.nanotime() to compare the speed of search algorithms with sorted and unsorted AVL and BST trees. I would like to understand how System.nanotime() works, and how to return time values from it. Please write some example code, walk me through it, and suggest potential implementations
+
+Response: https://chatgpt.com/s/t_68f78a14741881918ee1652fa6923ff8
+Assessment: This was a good response, it helped me understand how System.nanotime() is used rather than just programming it for me. This was also an operation I had not previously used, but after this explanation I knew how to implement it.
+
+### Prompt 3: How would i be able to have a select 4 classes be able to be used for a method and no others?
+
+Response: https://chatgpt.com/s/t_68f78bea342881919ff8fc6069f9e44d
+Assessment: Really useful! I used this to implement my timeTreeSearch and timeTreeInsert operations in java, as I did not want to copy and paste the same lines of code for each tree.
+
+### Prompt 4: "public class AvlTree<AnyType extends Comparable<? super AnyType>> extends Tree<AnyType extends Comparable<? super AnyType>>" please explain what is wrong with this statement so I may correct it.
+
+Response: https://chatgpt.com/s/t_68f78c9eba4c81918a0572690dc77389
+Assessment: Was struggling to implement an extended class so I could refer to both a BST and an AVL Tree in my timeTreeSearch and timeTreeInsert methods. Here, GPT did not work and just overcomplicated the code, so I asked a follow up prompt
+
+### Prompt 5: With this code I receive the following error: Type parameter 'AnyType' is not within its bound; should extend 'java.lang.Comparable<AnyType>'. Please assist with resolving the issue and explain why the resolution works
+
+Response: https://chatgpt.com/s/t_68f78d4527708191ba85baec53d7117a
+Asssessment: This response was much better, I had just needed to be more specific with my prompt.
 
 ## Modifications to Original Dataset
 One datapoint needed to be modified slightly: I changed the "," to an "and" in the drink title for the 125th datapoint. This was due to this data point causing bugs, as data attributes were determined were determined by the split(",") command.
