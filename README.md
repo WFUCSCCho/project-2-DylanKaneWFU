@@ -68,17 +68,21 @@ Run your program several times for different number of lines of your dataset, N,
 
 Using your favorite graphing software (e.g., MS Excel or Google Sheets), plot the running time (in seconds) and rate (in seconds per node) vs. N for each case, comparing the BST and AVL Trees (i.e., two lines per graph). Take a screenshot of your graph and put them here by modifying this file, committing, and pushing it to this repository.
 
+Note: all of my following inserted graphs have the x-axis as number of datapoints (nodes) and the y-axis as seconds
+
 BST vs. AVL Tree running time (insertion):
-(insert here)
+<img width="733" height="224" alt="Screenshot 2025-10-21 at 10 18 44" src="https://github.com/user-attachments/assets/923747ac-c291-41c3-a09f-a0f753c93c0d" />
 
 BST vs. AVL Tree running time (search):
-(insert here)
+<img width="755" height="244" alt="Screenshot 2025-10-21 at 10 18 55" src="https://github.com/user-attachments/assets/b933dca1-62a4-4454-8e35-f08626711521" />
+
 
 BST vs. AVL Tree running rate (insertion):
-(insert here)
+<img width="780" height="238" alt="Screenshot 2025-10-21 at 10 19 07" src="https://github.com/user-attachments/assets/3b0d5045-4a2b-483f-8502-1c9cbb075db5" />
+
 
 BST vs. AVL Tree running rate (search):
-(insert here)
+<img width="856" height="266" alt="Screenshot 2025-10-21 at 10 26 20" src="https://github.com/user-attachments/assets/80fa8598-01bf-4147-9fcb-297e82216478" />
 
 ## Submission:
 
@@ -131,7 +135,24 @@ Assessment: Was struggling to implement an extended class so I could refer to bo
 Response: https://chatgpt.com/s/t_68f78d4527708191ba85baec53d7117a
 Asssessment: This response was much better, I had just needed to be more specific with my prompt.
 
+### Prompt 6: (Presented code) Currently having issues with findMin(), obtaining underflow error even though the tree is not empty. provide me suggestions as to why and help me find a solution
+
+Response: https://chatgpt.com/s/t_68f79ba08a608191a1bd9065eb54fcb0
+Assessment: Very unhelpful. Had to prompt again.
+
+### Prompt 7: (Presented code + test program) Still having issues with these fixes. What is another solution?
+
+Response: https://chatgpt.com/s/t_68f79b288a54819182ad3a0e12a2ff96
+Assessment: Much more helpful. I realised that the remove() function had been essential in the testing and I had neglected it entirely due to being unsure how to implement it. GPT provided advice on how to implement the remove() function, which in turn allowed the TestAVL file to run without errors
+
 ## Modifications to Original Dataset
 One datapoint needed to be modified slightly: I changed the "," to an "and" in the drink title for the 125th datapoint. This was due to this data point causing bugs, as data attributes were determined were determined by the split(",") command.
+
+```
+//Old
+"Coffee (Decaf, Instant)",236.588,6,2,Coffee
+//New
+"Coffee (Decaf and Instant)",236.588,6,2,Coffee
+```
 
 
