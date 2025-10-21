@@ -18,24 +18,24 @@ import java.io.File;
 
 public class Proj2 {
     public static double timeTreeSearch(Tree<DataObj> tree, ArrayList<DataObj> initData) {
-        //times the search operation of a tree
+        //times the search operation of a tree in seconds
         long startTimer = System.nanoTime();
         for (DataObj initDatum : initData) {
             boolean searchResult = tree.contains(initDatum); //result is not used, just for timing purposes
         }
 
         long endTimer = System.nanoTime();
-        return (endTimer - startTimer) / 1_000_000.0;
+        return (endTimer - startTimer) / 1_000_000_000.0;
     }
 
     public static double timeTreeInsert(Tree<DataObj> tree, ArrayList<DataObj> data) {
-        //times the insert operation of a tree
+        //times the insert operation of a tree in seconds
         long startTimer = System.nanoTime();
         for (int i = 0; i < data.size(); i++) {
             tree.insert(data.get(i));
         }
         long endTimer = System.nanoTime();
-        return (endTimer - startTimer) / 1_000_000.0;
+        return (endTimer - startTimer) / 1_000_000_000.0;
     }
 
     public static void main(String[] args) throws IOException {
