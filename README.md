@@ -1,3 +1,5 @@
+Note: ChatGPT documentation and dataset modifications are included at the bottom of this README.md
+
 # Project 2 @ CSC 201 Fall 2025: AVL Tree
 
 ## Pledged Work Policy
@@ -96,3 +98,12 @@ I ___strongly suggest___ that you carefully think through your strategy before j
 ∗ @date: October 21, 2025
 ∗∗∗∗∗∗∗∗∗∗∗∗∗∗∗∗∗∗∗∗∗∗∗∗∗∗∗∗∗∗∗∗∗∗∗∗∗∗∗∗∗∗∗∗∗∗∗∗∗∗∗∗∗∗∗∗∗∗∗∗∗∗∗∗∗∗∗∗∗∗∗/
 ```
+# Modifications and Documentation
+
+## ChatGPT
+### Prompt 1: 
+
+## Modifications to Original Dataset
+One datapoint needed to be modified slightly: I changed the "," to an "and" in the drink title for the 125th datapoint. This was due to this data point causing bugs, as data attributes were determined were determined by the split(",") command.
+
+
