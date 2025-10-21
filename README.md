@@ -71,18 +71,18 @@ Using your favorite graphing software (e.g., MS Excel or Google Sheets), plot th
 Note: all of my following inserted graphs have the x-axis as number of datapoints (nodes) and the y-axis as seconds
 
 BST vs. AVL Tree running time (insertion):
-<img width="733" height="224" alt="Screenshot 2025-10-21 at 10 18 44" src="https://github.com/user-attachments/assets/923747ac-c291-41c3-a09f-a0f753c93c0d" />
+<img width="665" height="200" alt="Screenshot 2025-10-21 at 11 11 57" src="https://github.com/user-attachments/assets/e3afc613-0fb2-4da1-b1bf-d2c22fd98336" />
+
 
 BST vs. AVL Tree running time (search):
-<img width="755" height="244" alt="Screenshot 2025-10-21 at 10 18 55" src="https://github.com/user-attachments/assets/b933dca1-62a4-4454-8e35-f08626711521" />
+<img width="668" height="209" alt="Screenshot 2025-10-21 at 11 12 07" src="https://github.com/user-attachments/assets/a3f237a8-2fdd-402f-9ba3-c56d9ca558ee" />
 
 
 BST vs. AVL Tree running rate (insertion):
-<img width="780" height="238" alt="Screenshot 2025-10-21 at 10 19 07" src="https://github.com/user-attachments/assets/3b0d5045-4a2b-483f-8502-1c9cbb075db5" />
-
+<img width="686" height="201" alt="Screenshot 2025-10-21 at 11 12 38" src="https://github.com/user-attachments/assets/2151eaed-6bef-4ba7-a9b2-fc9ab78a666a" />
 
 BST vs. AVL Tree running rate (search):
-<img width="856" height="266" alt="Screenshot 2025-10-21 at 10 26 20" src="https://github.com/user-attachments/assets/80fa8598-01bf-4147-9fcb-297e82216478" />
+<img width="653" height="204" alt="Screenshot 2025-10-21 at 11 13 10" src="https://github.com/user-attachments/assets/7dc62314-e2c9-420e-b3d6-86068ecc734b" />
 
 ## Submission:
 
