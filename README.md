@@ -135,7 +135,24 @@ Assessment: Was struggling to implement an extended class so I could refer to bo
 Response: https://chatgpt.com/s/t_68f78d4527708191ba85baec53d7117a
 Asssessment: This response was much better, I had just needed to be more specific with my prompt.
 
+### Prompt 6: (Presented code) Currently having issues with findMin(), obtaining underflow error even though the tree is not empty. provide me suggestions as to why and help me find a solution
+
+Response: https://chatgpt.com/s/t_68f79ba08a608191a1bd9065eb54fcb0
+Assessment: Very unhelpful. Had to prompt again.
+
+### Prompt 7: (Presented code + test program) Still having issues with these fixes. What is another solution?
+
+Response: https://chatgpt.com/s/t_68f79b288a54819182ad3a0e12a2ff96
+Assessment: Much more helpful. I realised that the remove() function had been essential in the testing and I had neglected it entirely due to being unsure how to implement it. GPT provided advice on how to implement the remove() function, which in turn allowed the TestAVL file to run without errors
+
 ## Modifications to Original Dataset
 One datapoint needed to be modified slightly: I changed the "," to an "and" in the drink title for the 125th datapoint. This was due to this data point causing bugs, as data attributes were determined were determined by the split(",") command.
+
+```
+//Old
+"Coffee (Decaf, Instant)",236.588,6,2,Coffee
+//New
+"Coffee (Decaf and Instant)",236.588,6,2,Coffee
+```
 
 
