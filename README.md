@@ -82,7 +82,7 @@ BST vs. AVL Tree running rate (insertion):
 
 
 BST vs. AVL Tree running rate (search):
-<img width="712" height="234" alt="Screenshot 2025-10-21 at 10 25 19" src="https://github.com/user-attachments/assets/a2a91a8d-5776-41fe-b4a2-39c340805443" />
+<img width="856" height="266" alt="Screenshot 2025-10-21 at 10 26 20" src="https://github.com/user-attachments/assets/80fa8598-01bf-4147-9fcb-297e82216478" />
 
 ## Submission:
 
