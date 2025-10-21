@@ -1,3 +1,10 @@
+/************************************************************************
+ * @file AvlTree.java
+ * @brief This program implements java to create an AVL Tree Class
+ * @author Dylan Kane
+ * @date October 21, 2025
+ *************************************************************************/
+
 // AvlTree class
 //
 // CONSTRUCTION: with no initializer
@@ -32,6 +39,7 @@ class AvlTree<AnyType extends Comparable<AnyType>>
      * Insert into the tree; duplicates are ignored.
      * @param x the item to insert.
      */
+    @Override
     public void insert( AnyType x ) {
         root = insert( x, root );
     }
@@ -179,6 +187,7 @@ class AvlTree<AnyType extends Comparable<AnyType>>
      * @param t the node that roots the subtree.
      * @return the new root of the subtree.
      */
+
     private AvlNode<AnyType> insert( AnyType x, AvlNode<AnyType> t ) {
 
         if (this.root == null) {

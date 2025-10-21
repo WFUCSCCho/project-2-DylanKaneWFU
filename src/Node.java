@@ -2,7 +2,7 @@
  * @file Node.java
  * @brief This program implements java to create a node class
  * @author Dylan Kane
- * @date September 25, 2025
+ * @date October 21, 2025
  *************************************************************************/
 
 public class Node<T extends Comparable<T>> implements Comparable<Node<T>>{

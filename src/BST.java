@@ -2,7 +2,7 @@
  * @file BST.java
  * @brief This program implements java to create a BST class
  * @author Dylan Kane
- * @date September 25, 2025
+ * @date October 21, 2025
  *************************************************************************/
 
 import java.util.ArrayList;
@@ -59,6 +59,7 @@ public class BST<E extends Comparable<E>> extends Tree<E> implements Iterator<E>
         next();
     }
 
+    @Override
     public void insert(E val) {
         //inserts a new node in the BST
         Node<E> newNode = new Node<>(val);
