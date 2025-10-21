@@ -1,5 +1,5 @@
 /************************************************************************
- * @file Iterator.java
+ * @file Proj2.java
  * @brief This program implements java to run and time the search and insert operations for the trees
  * @author Dylan Kane
  * @date October 21, 2025
@@ -24,7 +24,7 @@ public class Proj2 {
         }
 
         long endTimer = System.nanoTime();
-        return endTimer - startTimer;
+        return (endTimer - startTimer) / 1_000_000.0;
     }
 
     public static double timeTreeInsert(Tree<DataObj> tree, ArrayList<DataObj> data) {
@@ -34,7 +34,7 @@ public class Proj2 {
             tree.insert(data.get(i));
         }
         long endTimer = System.nanoTime();
-        return endTimer - startTimer;
+        return (endTimer - startTimer) / 1_000_000.0;
     }
 
     public static void main(String[] args) throws IOException {
