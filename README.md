@@ -145,6 +145,11 @@ Assessment: Very unhelpful. Had to prompt again.
 Response: https://chatgpt.com/s/t_68f79b288a54819182ad3a0e12a2ff96
 Assessment: Much more helpful. I realised that the remove() function had been essential in the testing and I had neglected it entirely due to being unsure how to implement it. GPT provided advice on how to implement the remove() function, which in turn allowed the TestAVL file to run without errors
 
+### Prompt 6: How to check if a file is empty most effectively in java?
+
+Response: https://chatgpt.com/s/t_68f7a3647a6081918b705009cbecafc8
+Assessment: Worked well, and gave me multiple ideas for how to implement this idea. I ended up using the second option
+
 ## Modifications to Original Dataset
 One datapoint needed to be modified slightly: I changed the "," to an "and" in the drink title for the 125th datapoint. This was due to this data point causing bugs, as data attributes were determined were determined by the split(",") command.
 
