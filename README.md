@@ -1,3 +1,5 @@
+Note: ChatGPT documentation and dataset modifications are included at the bottom of this README.md
+
 # Project 2 @ CSC 201 Fall 2025: AVL Tree
 
 ## Pledged Work Policy
@@ -66,17 +68,21 @@ Run your program several times for different number of lines of your dataset, N,
 
 Using your favorite graphing software (e.g., MS Excel or Google Sheets), plot the running time (in seconds) and rate (in seconds per node) vs. N for each case, comparing the BST and AVL Trees (i.e., two lines per graph). Take a screenshot of your graph and put them here by modifying this file, committing, and pushing it to this repository.
 
+Note: all of my following inserted graphs have the x-axis as number of datapoints (nodes) and the y-axis as seconds
+
 BST vs. AVL Tree running time (insertion):
-(insert here)
+<img width="665" height="200" alt="Screenshot 2025-10-21 at 11 11 57" src="https://github.com/user-attachments/assets/e3afc613-0fb2-4da1-b1bf-d2c22fd98336" />
+
 
 BST vs. AVL Tree running time (search):
-(insert here)
+<img width="668" height="209" alt="Screenshot 2025-10-21 at 11 12 07" src="https://github.com/user-attachments/assets/a3f237a8-2fdd-402f-9ba3-c56d9ca558ee" />
+
 
 BST vs. AVL Tree running rate (insertion):
-(insert here)
+<img width="686" height="201" alt="Screenshot 2025-10-21 at 11 12 38" src="https://github.com/user-attachments/assets/2151eaed-6bef-4ba7-a9b2-fc9ab78a666a" />
 
 BST vs. AVL Tree running rate (search):
-(insert here)
+<img width="653" height="204" alt="Screenshot 2025-10-21 at 11 13 10" src="https://github.com/user-attachments/assets/7dc62314-e2c9-420e-b3d6-86068ecc734b" />
 
 ## Submission:
 
@@ -96,3 +102,62 @@ I ___strongly suggest___ that you carefully think through your strategy before j
 ∗ @date: October 21, 2025
 ∗∗∗∗∗∗∗∗∗∗∗∗∗∗∗∗∗∗∗∗∗∗∗∗∗∗∗∗∗∗∗∗∗∗∗∗∗∗∗∗∗∗∗∗∗∗∗∗∗∗∗∗∗∗∗∗∗∗∗∗∗∗∗∗∗∗∗∗∗∗∗/
 ```
+# Modifications and Documentation
+
+## ChatGPT
+### Prompt 1: Provide me example code of how to use Collections.sort() and Collections.shuffle() to store data objects in an array list. I would like to sort them, if possible, by a specific integer attribute of the object. Program it in java.
+
+Response: https://chatgpt.com/s/t_68f7896d9cd88191b2cfb265e80634f6
+Assessment: This was useful to learn how the Collections.sort() and Collections.shuffle() operations work and how they are typically implemented, as I had not previously used them before in any of my projects. I felt more comfortable using these operaitons after this
+
+### Prompt 2: Is there a way to have Collections return a new array without modifying the original array?
+
+Response: https://chatgpt.com/s/t_68f78ad31220819182f1de475447eea3
+Assessment: This was not particularly helpful. I wanted to see if there was an easier way to implement the .sort() and .shuffle() algorithms, here GPT did not give me much of a solution and more gave me a long answer of "no".
+
+### Prompt 3: I would like to use System.nanotime() to compare the speed of search algorithms with sorted and unsorted AVL and BST trees. I would like to understand how System.nanotime() works, and how to return time values from it. Please write some example code, walk me through it, and suggest potential implementations
+
+Response: https://chatgpt.com/s/t_68f78a14741881918ee1652fa6923ff8
+Assessment: This was a good response, it helped me understand how System.nanotime() is used rather than just programming it for me. This was also an operation I had not previously used, but after this explanation I knew how to implement it.
+
+### Prompt 3: How would i be able to have a select 4 classes be able to be used for a method and no others?
+
+Response: https://chatgpt.com/s/t_68f78bea342881919ff8fc6069f9e44d
+Assessment: Really useful! I used this to implement my timeTreeSearch and timeTreeInsert operations in java, as I did not want to copy and paste the same lines of code for each tree.
+
+### Prompt 4: "public class AvlTree<AnyType extends Comparable<? super AnyType>> extends Tree<AnyType extends Comparable<? super AnyType>>" please explain what is wrong with this statement so I may correct it.
+
+Response: https://chatgpt.com/s/t_68f78c9eba4c81918a0572690dc77389
+Assessment: Was struggling to implement an extended class so I could refer to both a BST and an AVL Tree in my timeTreeSearch and timeTreeInsert methods. Here, GPT did not work and just overcomplicated the code, so I asked a follow up prompt
+
+### Prompt 5: With this code I receive the following error: Type parameter 'AnyType' is not within its bound; should extend 'java.lang.Comparable<AnyType>'. Please assist with resolving the issue and explain why the resolution works
+
+Response: https://chatgpt.com/s/t_68f78d4527708191ba85baec53d7117a
+Asssessment: This response was much better, I had just needed to be more specific with my prompt.
+
+### Prompt 6: (Presented code) Currently having issues with findMin(), obtaining underflow error even though the tree is not empty. provide me suggestions as to why and help me find a solution
+
+Response: https://chatgpt.com/s/t_68f79ba08a608191a1bd9065eb54fcb0
+Assessment: Very unhelpful. Had to prompt again.
+
+### Prompt 7: (Presented code + test program) Still having issues with these fixes. What is another solution?
+
+Response: https://chatgpt.com/s/t_68f79b288a54819182ad3a0e12a2ff96
+Assessment: Much more helpful. I realised that the remove() function had been essential in the testing and I had neglected it entirely due to being unsure how to implement it. GPT provided advice on how to implement the remove() function, which in turn allowed the TestAVL file to run without errors
+
+### Prompt 8: How to check if a file is empty most effectively in java?
+
+Response: https://chatgpt.com/s/t_68f7a3647a6081918b705009cbecafc8
+Assessment: Worked well, and gave me multiple ideas for how to implement this idea. I ended up using the second option
+
+## Modifications to Original Dataset
+One datapoint needed to be modified slightly: I changed the "," to an "and" in the drink title for the 125th datapoint. This was due to this data point causing bugs, as data attributes were determined were determined by the split(",") command.
+
+```
+//Old
+"Coffee (Decaf, Instant)",236.588,6,2,Coffee
+//New
+"Coffee (Decaf and Instant)",236.588,6,2,Coffee
+```
+
+
