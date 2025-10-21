@@ -14,6 +14,7 @@ import java.util.Scanner;
 import java.util.Collections;
 import java.util.Comparator;
 import java.io.StringWriter;
+import java.io.File;
 
 public class Proj2 {
     public static double timeTreeSearch(Tree<DataObj> tree, ArrayList<DataObj> initData) {
@@ -100,6 +101,10 @@ public class Proj2 {
         double sortedAVLSearchTime = timeTreeSearch(sortedAVL, initData);
         double randomAVLSearchTime = timeTreeSearch(randomAVL, initData);
 
+        File file = new File("output.txt");
+        boolean needsHeader = false;
+        if (!file.exists()) needsHeader = true;
+
         //Write to output file
         FileOutputStream myFile = new FileOutputStream("output.txt", true);
         PrintWriter fileWriter = new PrintWriter(myFile);
@@ -124,11 +129,25 @@ public class Proj2 {
 
         String results = stringWriter.toString();
 
-        //print results to screen for user
+        //print results in human-readable format to screen for user
         System.out.print(results);
 
-        //write results to output.txt file
-        fileWriter.print(results);
+        //write results to output.txt file in csv format
+
+        //check if file is empty, if so add a header
+        if (needsHeader) fileWriter.println("Lines Read," +
+                "Sorted BST Insert Time," +
+                "Random BST Insert Time," +
+                "Sorted AVL Insert Time," +
+                "Random AVL Insert Time");
+
+        fileWriter.printf("%d,%.9f,%.9f,%.9f,%.9f\n",
+                numLines,
+                sortedBSTSearchTime,
+                randomBSTSearchTime,
+                sortedAVLSearchTime,
+                randomAVLSearchTime
+        );
 
         fileWriter.flush();
         fileWriter.close();
